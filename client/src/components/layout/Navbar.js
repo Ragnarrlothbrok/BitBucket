@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class Navbar extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
+      <nav className="navbar fixed-top navbar-expand-sm navbar-dark bg-dark mb-4">
         <div className="container">
           <div className="navbar-brand" style={{ color: "white" }}>
             Flicker Search

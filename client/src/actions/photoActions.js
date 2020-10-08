@@ -11,7 +11,7 @@ import {
 import cors from "cors";
 import { toast } from "react-toastify";
 
-//get currnt Photo
+//get recent Photos with no search text entered
 export const getPhotos = (page) => (dispatch) => {
   dispatch(setPhotoLoading());
   axios
@@ -34,6 +34,7 @@ export const getPhotos = (page) => (dispatch) => {
     );
 };
 
+//getting photos after user enters the query
 export const getPhotoByHandle = (handle) => (dispatch) => {
   axios
     .post(`/api/client/accept/${handle}`, { mode: cors })

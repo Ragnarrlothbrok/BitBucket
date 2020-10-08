@@ -1,20 +1,14 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import Photos from "../photos/Photos";
+
 import { ToastContainer, toast } from "react-toastify";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import "react-toastify/dist/ReactToastify.css";
 import { getPhotos } from "../../actions/photoActions";
 import ImageList from "../Search/SearchList";
 import ImageModal from "../Search/SearchModal";
-import {
-  scrollAreaAvailable,
-  debounce,
-  throttle,
-  checkHttpStatus,
-  parseJSON,
-} from "../utilities/utilities";
+import { debounce, checkHttpStatus, parseJSON } from "../utilities/utilities";
 import apiCalls from "../../apiCalls";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Spinner from "../common/Spinner";

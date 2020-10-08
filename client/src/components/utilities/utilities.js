@@ -1,7 +1,3 @@
-/*
-    This file contains the common utility functions that will be used in our App at several places
-*/
-
 /* Return document height */
 function getDocumentHeight() {
   const body = document.body;

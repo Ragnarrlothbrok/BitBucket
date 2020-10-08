@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
-import isEmpty from "../../validation/isEmpty";
-import user from "../../../src/img/user.jpg";
-import { toast } from "react-toastify";
+
 import { connect } from "react-redux";
-import Modal from "../common/modal/Modal";
+
+//This was the previous card approach i included in the project
 
 class PhotoItem extends Component {
   constructor() {

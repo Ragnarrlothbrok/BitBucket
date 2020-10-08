@@ -10,6 +10,8 @@ import "react-toastify/dist/ReactToastify.css";
 import ImageModal from "../Search/SearchModal";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
+//This was the previous card approach i included in the project
+
 class Photos extends Component {
   constructor(props) {
     super(props);

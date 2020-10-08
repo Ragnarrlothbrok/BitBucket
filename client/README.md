@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+I have initially used differenr approach for displaying images i.e using cards.But the rendering was slow and modal view was not as per the requirements. So i shifted to a simpler view edition. I previously also included redux store for maintaining the state and so i haven't removed that from the program as i believe that will aid in showcasing my knowledge.
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
-import { Link } from "react-router-dom";
-import { getPhotosBySearch } from "../../actions/photoActions";
 import IconButton from "@material-ui/core/IconButton";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import SearchIcon from "@material-ui/icons/Search";
 import TextField from "@material-ui/core/TextField";
 
 // render
+
+//Another approach for autocomplete with suggestions popping down of entry field but i switched to a more aesthetic version.
 
 class Autocomplete extends Component {
   //   static propTypes = {
