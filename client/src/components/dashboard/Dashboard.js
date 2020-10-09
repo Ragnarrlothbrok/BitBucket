@@ -119,7 +119,7 @@ class Dashboard extends Component {
       .then((resp) => {
         resp.photos.photo.forEach((photo) => this.state.imageList2.push(photo));
         this.setState({
-          pageNumber: resp.photos.page,
+          page: resp.photos.page,
           imageList2: this.state.imageList2,
         });
       })
