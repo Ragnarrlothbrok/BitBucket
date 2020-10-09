@@ -62,7 +62,7 @@ class Dashboard extends Component {
 
     //simple photos
     let url =
-      " https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=b8fe1d6ebc51bebccbeab0a79cb7459b&format=json&nojsoncallback=1&per_page=10&&page=" +
+      "https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=cc908ffaee6f9e9fedf694699585448f&format=json&nojsoncallback=1&per_page=10&&page=" +
       this.state.page;
     fetch(url)
       .then(checkHttpStatus)
@@ -111,7 +111,7 @@ class Dashboard extends Component {
   }
   handleScroll1() {
     let url =
-      " https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=b8fe1d6ebc51bebccbeab0a79cb7459b&format=json&nojsoncallback=1&per_page=10&page=" +
+      " https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=cc908ffaee6f9e9fedf694699585448f&format=json&nojsoncallback=1&per_page=10&page=" +
       (this.state.page + 1);
     fetch(url)
       .then(checkHttpStatus)
