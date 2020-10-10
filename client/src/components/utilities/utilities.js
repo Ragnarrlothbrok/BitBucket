@@ -1,3 +1,5 @@
+import { response } from "express";
+
 /* Return document height */
 function getDocumentHeight() {
   const body = document.body;
@@ -12,6 +14,7 @@ function getDocumentHeight() {
   );
 }
 
+
 /* Return scrollTop height: The pixels value which is above the visible scrollable area */
 function getScrollTop() {
   return window.pageYOffset !== undefined
@@ -25,7 +28,8 @@ export function scrollAreaAvailable() {
   return getScrollTop() < getDocumentHeight() - window.innerHeight;
 }
 
-/* Debounce function to discard a number of fastpace events */
+
+/* Debounce function to discard a number of closely timed events */
 export function debounce(func, wait, immediate) {
   var timeout;
   return function () {
