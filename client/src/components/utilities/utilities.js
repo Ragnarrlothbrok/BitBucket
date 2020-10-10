@@ -1,4 +1,4 @@
-import { response } from "express";
+
 
 /* Return document height */
 function getDocumentHeight() {
